@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <link href="style.css">
+    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
+    <style>
+        body{
+           background-color: blanchedalmond;
+           color: white; 
+           text-align: center;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+     @media only screen and (max-width: 900px) {
+        body 
+        {
+          background-color: lightgreen;
+          color: white; 
+           text-align: center;
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+        }
+
+
+        #counter
+        {
+            font-size: 30px;
+        }    
+
+         .card
+         {
+            background-color: brown;
+            border: 2px white dotted;
+            left: 35%;
+            top: 30%;
+            width: 30%;
+            position: absolute;
+            border-radius: 30px;
+         }
+
+
+         @media only screen and (max-width: 900px) {
+        .card
+        {
+          background-color: red;
+          border: 2px black solid;
+          left: 30%;
+          top: 30%;
+          width: 30%;
+          position: absolute;
+          border-radius: 30px;
+         }
+
+        }
+
+         .buttons
+         {
+            margin-bottom: 30px;
+            color: blue;
+         }
+
+         button{
+            font-size: 30px;
+         }
+
+
+
+
+
+    </style>
+    </head>
+    <body>
+        <div class="content">
+         <div class="card">   
+        <h1>Javascript counter</h1>
+        <p id="counter">0</p>
+        <div class="buttons">
+        <button id="decreaseBtn">Decrease</button>
+        <button id="resetBtn">reset</button>
+        <button id="increaseBtn">increase</button>
+
+        </div>
+        </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
